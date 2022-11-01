@@ -1,0 +1,11 @@
+{% extends "registro.html" %}
+{% block content %}
+
+        <h1>Um novo personagem aparece: {{ form.nome.value }}</h1>
+        <p>Sua idade é: {{ form.idade.value }}</p>
+        <p>Seu destino é: {{ form.destino.value }}</p>
+        <p>Sua classe é: {{ form.classe_Person.value }}</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="{% url 'luta1' %}">Vá para a batalha em busca do seu destino!</a>
+        </nav>
+{% endblock %}

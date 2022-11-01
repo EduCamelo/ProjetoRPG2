@@ -1,0 +1,23 @@
+{% extends "registro.html" %}
+{% block content %}
+<h1>Você derrotou um inimigo, mas sofreu dano dele</h1>
+
+<section>
+    <h3>Sua vida: 85/100</h3>
+</section>
+<section>
+    <h1> VS</h1>
+</section>
+<section>
+    <div>
+        <h2>Savage, o carniceiro!</h2>
+    </div>
+    <div>
+        <h3>Vida do inimigo: 100/100</h3>
+    </div>
+</section>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'luta3' %}">Ataque!</a>
+</nav>
+{% endblock %}

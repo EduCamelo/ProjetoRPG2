@@ -1,0 +1,24 @@
+{% extends "registro.html" %}
+{% block content %}
+<h1>O chefe chegou!</h1>
+<h2>Você recupera ao lembrar do seu destino</h2>
+<section>
+    <h3>Sua vida: 100/100</h3>
+</section>
+<section>
+    <h1> VS</h1>
+</section>
+<section>
+    <div>
+        <h2>SirCamelot</h2>
+    </div>
+    <div>
+        <h3>Vida do inimigo: 100/100</h3>
+        <h3>Magia do inimigo: 100/100</h3>
+    </div>
+</section>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'derrota' %}">Ataque!</a>
+</nav>
+{% endblock %}
