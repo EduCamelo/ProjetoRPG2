@@ -5,13 +5,12 @@ class Personagem(forms.ModelForm):
     class Meta():
         model = Personagem1
         fields = '__all__'
-    
+        labels = {'Classe_Person' : 'Classe do personagem'}
 
     def clean(self):
         nome = self.cleaned_data.get('nome')
         idade = self.cleaned_data.get('idade')
         classe_Person = self.cleaned_data.get('classe_Person')
-        Raca = self.cleaned_data.get('Raca')
         destino = self.cleaned_data('destino')
         listaErros = {}
 
